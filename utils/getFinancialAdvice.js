@@ -38,4 +38,8 @@ const getFinancialAdvice = async (totalBudget, totalIncome, totalSpend) => {
   }
 };
 
+<<<<<<< HEAD
 export default getFinancialAdvice;
+=======
+export default getFinancialAdvice;
+>>>>>>> 99baa9ff4ecf255ed5db39c5478958c0c64e9ba5

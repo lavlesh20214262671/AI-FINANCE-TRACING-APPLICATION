@@ -17,7 +17,10 @@ function ExpenseListTable({ expensesList, refreshData }) {
       refreshData();
     }
   };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99baa9ff4ecf255ed5db39c5478958c0c64e9ba5
   return (
     <div className="mt-3">
       <h2 className="font-bold text-lg">Latest Expenses</h2>
@@ -27,6 +30,7 @@ function ExpenseListTable({ expensesList, refreshData }) {
         <h2 className="font-bold">Date</h2>
         <h2 className="font-bold">Action</h2>
       </div>
+<<<<<<< HEAD
       {expensesList.map((expense) => (
         <div
           key={expense.id} // Unique key for each expense item
@@ -37,10 +41,28 @@ function ExpenseListTable({ expensesList, refreshData }) {
           <h2>{expense.createdAt}</h2>
           <h2
             onClick={() => deleteExpense(expense)}
+=======
+      {expensesList.map((expenses, index) => (
+        <div className="grid grid-cols-4 bg-slate-50 rounded-bl-xl rounded-br-xl p-2">
+          <h2>{expenses.name}</h2>
+          <h2>{expenses.amount}</h2>
+          <h2>{expenses.createdAt}</h2>
+          <h2
+            onClick={() => deleteExpense(expenses)}
+>>>>>>> 99baa9ff4ecf255ed5db39c5478958c0c64e9ba5
             className="text-red-500 cursor-pointer"
           >
             Delete
           </h2>
+<<<<<<< HEAD
+=======
+          {/* <h2>
+            <Trash
+              className="text-red-500 cursor-pointer"
+              onClick={() => deleteExpense(expenses)}
+            />
+          </h2> */}
+>>>>>>> 99baa9ff4ecf255ed5db39c5478958c0c64e9ba5
         </div>
       ))}
     </div>
